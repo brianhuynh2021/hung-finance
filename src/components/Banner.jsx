@@ -1,4 +1,5 @@
 import React from 'react'
+import pvbNhaDat from '../assets/pvbNhaDat.png'
 
 const Banner = () => {
   return (
@@ -16,11 +17,12 @@ const Banner = () => {
             </span>
           </h1>
           <p className="text-base md:text-lg text-gray-700 mb-4">
-            Lãi suất thấp chỉ từ <span className="font-semibold">7.2% - 8.2%/năm</span> •
-            Thủ tục đơn giản, giải ngân nhanh • Hỗ trợ hồ sơ khó, nợ xấu vẫn có giải pháp.
+            Lãi suất thấp chỉ từ <span className="font-semibold">7.2% - 8.2%/năm</span>
           </p>
 
           <ul className="text-sm text-gray-700 space-y-1 mb-6">
+            <li>• Thủ tục đơn giản, giải ngân nhanh.</li>
+            <li>• Hỗ trợ hồ sơ khó, nợ xấu vẫn có giải pháp.</li>
             <li>• Hỗ trợ vay toàn quốc, ưu tiên Hồ Chí Minh và khu vực lân cận.</li>
             <li>• Hạn mức vay lên đến 80% giá trị tài sản đảm bảo.</li>
             <li>• Thời hạn vay tối đa 30 năm, trả góp linh hoạt hàng tháng.</li>
@@ -43,14 +45,14 @@ const Banner = () => {
         </div>
 
         {/* Ảnh minh hoạ */}
-        <div className="hidden md:flex justify-center">
-          <div className="w-72 h-72 rounded-3xl bg-gradient-to-br from-orange-400 to-blue-500 shadow-lg flex items-center justify-center text-white text-xl font-semibold text-center px-6">
-            Vay mua nhà, đất, ô tô, kinh doanh
-            <span className="block text-sm mt-2 font-normal">
-              Lãi suất ưu đãi - Thủ tục nhanh gọn
-            </span>
-          </div>
+        <div className="hidden md:flex items-center justify-center">
+          <img
+            src={pvbNhaDat}
+            alt="Hình minh hoạ vay vốn"
+            className="w-[360px] rounded-3xl shadow-xl object-cover"
+          />
         </div>
+
       </div>
     </section>
   )

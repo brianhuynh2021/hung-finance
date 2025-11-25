@@ -1,4 +1,5 @@
 import React from 'react'
+import pvbLogo from '../assets/pvbLogo.png'
 
 const Header = () => {
   return (
@@ -6,9 +7,11 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo + tên */}
         <div className="flex items-center gap-2">
-          <div className="h-10 w-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold text-lg">
-            PVcomBank
-          </div>
+          <img
+            src={pvbLogo}
+            alt="Logo PVB"
+            className="w-10 h-10 rounded-full object-cover"
+          />
           <div className="flex flex-col leading-tight">
             <span className="font-semibold text-sm sm:text-base">
               Mr. Hưng Phạm - Chuyên viên ngân hàng PVcomBank
