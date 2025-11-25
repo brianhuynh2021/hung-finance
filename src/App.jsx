@@ -8,6 +8,7 @@ import ServicesSection from './components/ServicesSection'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import FloatingChatButtons from './components/FloatingChatButtons'
+import NewsSection from "./components/NewsSection";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <main className="flex-1 w-full max-w-6xl mx-auto px-4">
         <Banner />
         <ServicesSection />
+        <NewsSection />
         <ContactForm />
       </main>
       <Footer />

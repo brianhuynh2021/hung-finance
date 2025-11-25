@@ -12,12 +12,12 @@ const Footer = () => {
             {/* Bên trái: thông tin */}
             <div>
               <h3 className="text-base md:text-lg font-bold text-gray-800 mb-1">
-                THE CHAP 247 — Dịch vụ tư vấn vay vốn cá nhân
+                VAY THẾ CHẤP BẤT ĐỘNG SẢN — Dịch vụ tư vấn vay vốn cá nhân
               </h3>
               <p className="text-sm text-gray-600">
                 Chuyên viên:{' '}
                 <span className="font-semibold text-gray-800">
-                  Mr. Hưng Phạm – Ngân hàng PVB
+                  Mr. Hưng Phạm – Ngân hàng PVcomBank
                 </span>
               </p>
               <p className="text-sm text-gray-600 mt-1">
@@ -86,7 +86,7 @@ const Footer = () => {
 
           {/* Đường kẻ + copyright */}
           <div className="mt-6 border-t border-gray-200 pt-3 text-xs text-gray-500 text-center">
-            © 2025 thechap247.com
+            © 2025 vaythechapbds.com - All rights reserved.
           </div>
         </div>
       </footer>
