@@ -31,13 +31,13 @@ const Banner = () => {
           <div className="flex flex-wrap gap-3 items-center">
             <a
               href="tel:0973341232"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-full text-sm md:text-base"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-full text-sm sm:text-base"
             >
               GỌI NGAY
             </a>
             <a
               href="#contact"
-              className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-5 py-2 rounded-full text-sm md:text-base"
+              className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-5 py-2 rounded-full text-sm sm:text-base"
             >
               Đăng ký nhận tư vấn
             </a>

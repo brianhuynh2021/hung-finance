@@ -27,7 +27,7 @@ const ContactForm = () => {
           <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
             ĐĂNG KÝ NHẬN TƯ VẤN VAY VỐN
           </h2>
-          <p className="text-sm md:text-base text-gray-700 mb-4">
+          <p className="text-sm sm:text-base text-gray-700 mb-4">
             Hãy để lại thông tin, Mr. Hưng Phạm sẽ chủ động liên hệ, tư vấn gói vay phù hợp nhất
             với thu nhập, tài sản và kế hoạch của bạn.
           </p>
@@ -98,7 +98,7 @@ const ContactForm = () => {
 
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-lg text-sm md:text-base"
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-lg text-sm sm:text-base"
             >
               GỬI THÔNG TIN
             </button>

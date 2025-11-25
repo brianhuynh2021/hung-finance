@@ -22,7 +22,7 @@ const ServicesSection = () => {
           CÁC GÓI HỖ TRỢ TÀI CHÍNH NGÂN HÀNG PVcomBank
         </h2>
 
-        <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto text-sm md:text-base">
+        <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto text-sm sm:text-base">
           Tùy theo nhu cầu: mua đất, mua nhà, mua ô tô, vay kinh doanh…
         </p>
 
@@ -37,13 +37,13 @@ const ServicesSection = () => {
                 <img
                   src={imageMap[service.key]}
                   alt={service.title}
-                  className="w-full h-40 object-cover transform hover:scale-[1.03] transition-transform duration-300"
+                  className="w-full h-36 sm:h-40 object-cover transform hover:scale-[1.03] transition-transform duration-300"
                 />
               </div>
 
               {/* Nội dung */}
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-semibold text-gray-900 text-sm md:text-base mb-2 leading-snug">
+                <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-2 leading-snug">
                   {service.title}
                 </h3>
 
