@@ -1,57 +1,88 @@
 import React from 'react'
+import { FaFacebookF, FaYoutube, FaTiktok } from 'react-icons/fa'
+import { SiZalo } from 'react-icons/si'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 text-sm">
-      <div className="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6">
-        <div>
-          <h3 className="font-semibold text-white mb-2">
-            CÔNG TY CỔ PHẦN TM-DV NHÂN TECH
-          </h3>
-          <p>
-            Hotline: <span className="font-semibold">0379.689068</span>
-          </p>
-          <p>
-            Chat Zalo:{' '}
-            <a href="#" className="underline text-orange-400">
-              Ấn vào đây
-            </a>
-          </p>
+    <footer className="bg-gray-50 border-t border-gray-200 mt-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        {/* Hàng chính: thông tin + social */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          {/* Bên trái: thông tin */}
+          <div>
+            <h3 className="text-base md:text-lg font-bold text-gray-800 mb-1">
+              THE CHAP 247 — Dịch vụ tư vấn vay vốn cá nhân
+            </h3>
+            <p className="text-sm text-gray-600">
+              Chuyên viên:{' '}
+              <span className="font-semibold text-gray-800">
+                Mr. Hưng Phạm – Ngân hàng PVB
+              </span>
+            </p>
+            <p className="text-sm text-gray-600 mt-1">
+              Hotline:{' '}
+              <a
+                href="tel:0973341232"
+                className="font-semibold text-orange-600 hover:underline"
+              >
+                0973 341 232
+              </a>
+            </p>
+          </div>
+
+          {/* Bên phải: social */}
+          <div className="flex flex-col items-start md:items-end gap-3">
+            <p className="text-sm font-semibold text-gray-700">
+              Kết nối với tôi
+            </p>
+            <div className="flex items-center gap-3">
+              {/* Zalo */}
+              <a
+                href="https://zalo.me/0973341232"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition"
+              >
+                <SiZalo size={18} />
+              </a>
+
+              {/* Facebook */}
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+              >
+                <FaFacebookF size={16} />
+              </a>
+
+              {/* Youtube */}
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition"
+              >
+                <FaYoutube size={18} />
+              </a>
+
+              {/* Tiktok */}
+              <a
+                href="https://tiktok.com"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition"
+              >
+                <FaTiktok size={16} />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h3 className="font-semibold text-white mb-2">CHÍNH SÁCH &amp; QUY ĐỊNH</h3>
-          <ul className="space-y-1">
-            <li>
-              <a href="#" className="hover:text-white">
-                Chính sách điều khoản
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Chính sách bảo mật
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Chính sách vận chuyển
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Chính sách đổi trả
-              </a>
-            </li>
-          </ul>
+        {/* Đường kẻ + copyright */}
+        <div className="mt-6 border-t border-gray-200 pt-3 text-xs text-gray-500 text-center">
+          © 2025 thechap247.com
         </div>
-
-        <div>
-          <h3 className="font-semibold text-white mb-2">KẾT NỐI VỚI CHÚNG TÔI</h3>
-          <p>Facebook • Youtube • Tiktok</p>
-        </div>
-      </div>
-      <div className="border-t border-gray-800 py-3 text-center text-xs text-gray-500">
-        ©2025 Hưng Phạm Finance • Tư vấn vay vốn & tài chính cá nhân.
       </div>
     </footer>
   )
