@@ -33,7 +33,7 @@ const Banner = () => {
               href="tel:0973341232"
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-full text-sm md:text-base"
             >
-              GỌI NGAY TƯ VẤN
+              GỌI NGAY
             </a>
             <a
               href="#contact"
