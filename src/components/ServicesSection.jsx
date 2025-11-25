@@ -16,9 +16,9 @@ const imageMap = {
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="bg-white">
+    <section id="services" className="bg-white" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
-        <h2 className="text-xl md:text-2xl font-bold text-center mb-6 text-gray-800">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center mb-8 text-gray-800">
           CÁC GÓI HỖ TRỢ TÀI CHÍNH NGÂN HÀNG PVcomBank
         </h2>
 
@@ -26,35 +26,35 @@ const ServicesSection = () => {
           Tùy theo nhu cầu: mua đất, mua nhà, mua ô tô, vay kinh doanh…
         </p>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-7 sm:gap-10 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
           {services.map((service) => (
             <article
               key={service.key}
-              className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100 flex flex-col h-full"
+              className="bg-white rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 flex flex-col h-full animate-[fadeInUp_0.4s_ease]"
             >
               {/* Ảnh */}
-              <div className="overflow-hidden rounded-t-2xl">
+              <div className="overflow-hidden rounded-t-xl">
                 <img
                   src={imageMap[service.key]}
                   alt={service.title}
-                  className="w-full h-36 sm:h-40 object-cover transform hover:scale-[1.03] transition-transform duration-300"
+                  className="w-full h-36 sm:h-44 object-cover transform hover:scale-[1.05] transition-transform duration-300"
                 />
               </div>
 
               {/* Nội dung */}
-              <div className="p-4 flex-1 flex flex-col">
+              <div className="p-4 sm:p-5 flex-1 flex flex-col">
                 <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-2 leading-snug">
                   {service.title}
                 </h3>
 
-                <p className="text-xs md:text-sm text-gray-600 mb-3">
+                <p className="text-xs sm:text-sm text-gray-600 mb-3">
                   {service.desc}
                 </p>
 
-                <ul className="space-y-1.5 text-xs md:text-sm text-gray-700 mb-4">
+                <ul className="space-y-1.5 text-xs sm:text-sm text-gray-700 mb-4">
                   {service.bullets.map((txt, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="mt-[3px] text-orange-500 text-sm">⚡</span>
+                      <span className="mt-[3px] text-orange-500 text-sm">✔</span>
                       <span
                         className={
                           idx === service.highlightIndex
@@ -69,16 +69,16 @@ const ServicesSection = () => {
                 </ul>
 
                 {/* Nút */}
-                <div className="mt-auto flex gap-3">
+                <div className="mt-auto flex gap-3 pt-2">
                   <a
                     href="tel:0379689068"
-                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-sm font-semibold py-2 rounded-full text-center transition-colors"
+                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-semibold py-2 rounded-full text-center transition-colors"
                   >
                     GỌI NGAY
                   </a>
                   <a
                     href="#contact"
-                    className="flex-1 border border-orange-500 text-orange-600 hover:bg-orange-50 text-xs md:text-sm font-semibold py-2 rounded-full text-center transition-colors"
+                    className="flex-1 border border-orange-500 text-orange-600 hover:bg-orange-50 text-xs sm:text-sm font-semibold py-2 rounded-full text-center transition-colors"
                   >
                     TƯ VẤN
                   </a>

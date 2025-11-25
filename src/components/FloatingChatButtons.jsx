@@ -10,10 +10,18 @@ const FloatingChatButtons = () => {
         rel="noreferrer"
         className="w-12 h-12 rounded-full bg-[#0068FF] shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
       >
-        {/* Icon Zalo đơn giản */}
-        <span className="bg-white text-[#0068FF] font-bold text-[9px] leading-tight px-1.5 py-0.5 rounded">
-          Zalo
-        </span>
+        {/* Icon Zalo SVG */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+          className="w-7 h-7"
+        >
+          <rect width="48" height="48" rx="12" fill="white"/>
+          <path
+            fill="#0068FF"
+            d="M15 19.5h3l3 9 3-9h3l-4.5 12h-3L15 19.5zm16.9 0c2.5 0 4.1 1.6 4.1 4 0 2.4-1.6 4-4.1 4h-2v4h-3v-12h5zm-.2 6c1.3 0 2-.7 2-2s-.7-2-2-2h-1.8v4H31.7z"
+          />
+        </svg>
       </a>
 
       {/* Messenger */}
