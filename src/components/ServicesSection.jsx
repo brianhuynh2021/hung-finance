@@ -71,7 +71,7 @@ const ServicesSection = () => {
                 {/* Nút */}
                 <div className="mt-auto flex gap-3 pt-2">
                   <a
-                    href="tel:0379689068"
+                    href="tel:0973341232"
                     className="flex-1 bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-semibold py-2 rounded-full text-center transition-colors"
                   >
                     GỌI NGAY
