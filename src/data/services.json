@@ -1,0 +1,54 @@
+[
+  {
+    "key": "land",
+    "image": "land.png",
+    "title": "Hỗ trợ mua đất - Tài chính từ 500 triệu trở lên",
+    "desc": "Hồ sơ duyệt nhanh trong 2 ngày, phù hợp khách hàng có nhu cầu mua đất nền, đất dự án.",
+    "bullets": [
+      "Hồ sơ duyệt nhanh trong 2 ngày",
+      "Lãi suất: 6.2% 6 tháng, 7.2% 12 tháng, 8.2% 24 tháng",
+      "Ân hạn gốc đến 24 tháng",
+      "Hỗ trợ chứng minh thu nhập, hồ sơ khó"
+    ],
+    "highlightIndex": 1
+  },
+  {
+    "key": "house",
+    "image": "house.png",
+    "title": "Gói tài chính mua nhà, sửa chữa nhà - Hỗ trợ từ 500 triệu trở lên",
+    "desc": "Phù hợp khách hàng mua nhà ở, nhà phố, căn hộ, hoặc cần vốn sửa chữa, hoàn thiện nhà.",
+    "bullets": [
+      "Hồ sơ duyệt nhanh trong 2 ngày",
+      "Lãi suất: 6.2% 6 tháng, 7.2% 12 tháng, 8.2% 24 tháng",
+      "Thời hạn vay tối đa 30 năm",
+      "Hạn mức tối đa 80% giá trị tài sản đảm bảo"
+    ],
+    "highlightIndex": 1
+  },
+  {
+    "key": "business",
+    "image": "business.png",
+    "title": "Hỗ trợ vay kinh doanh - Thế chấp BĐS",
+    "desc": "Bổ sung vốn lưu động, đầu tư mở rộng kinh doanh, tối ưu dòng tiền cho hộ kinh doanh & doanh nghiệp nhỏ.",
+    "bullets": [
+      "Hỗ trợ tài chính từ 500 triệu trở lên",
+      "Lãi suất: 7.2% 6 tháng, 7.7% 9 tháng, 8.2% 12 tháng",
+      "Hồ sơ đơn giản, không cần báo cáo tài chính quá phức tạp",
+      "Hộ khẩu tỉnh vẫn được hỗ trợ (tùy trường hợp)"
+    ],
+    "highlightIndex": 1
+  },
+  {
+    "key": "car",
+    "image": "car.png",
+    "title": "Hỗ trợ tài chính mua ô tô, tối đa 80% giá trị xe",
+    "desc": "Phù hợp khách hàng mua xe phục vụ nhu cầu đi lại, công việc, kinh doanh dịch vụ.",
+    "bullets": [
+      "Hồ sơ duyệt nhanh trong 2 ngày",
+      "Lãi suất: 6.3% 6 tháng, 7.3% 12 tháng",
+      "Thời gian vay tối đa 96 tháng (8 năm)",
+      "Hồ sơ đơn giản, không cần chứng minh thu nhập quá phức tạp"
+    ],
+    "highlightIndex": 1
+  }
+]
