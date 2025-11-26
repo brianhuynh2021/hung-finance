@@ -17,7 +17,7 @@ const ContactForm = () => {
 
     try {
       const data = {
-        access_key: 'b2297767-3f20-4773-a6ad-1ad543f725ea',
+        access_key: '141579b2-cbb1-43fe-8647-78eb057efcaf',
         to_email: 'hungcredit@gmail.com',
         subject: 'Khách hàng mới đăng ký tư vấn vay vốn',
         name,
