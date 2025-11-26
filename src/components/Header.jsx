@@ -8,7 +8,7 @@ const Header = () => {
   const menuItems = [
     { label: 'Trang chủ', type: 'route', to: '/' },
     { label: 'Gói vay', type: 'hash', href: '/#services' },
-    { label: 'Lợi ích', type: 'hash', href: '/#benefits' },
+    // { label: 'Lợi ích', type: 'hash', href: '/#benefits' },
     { label: 'Tin tức', type: 'route', to: '/tin-tuc' },
     { label: 'Liên hệ', type: 'hash', href: '/#contact' },
   ]
