@@ -19,7 +19,7 @@ const ServicesSection = () => {
     <section id="services" className="bg-white" data-aos="fade-up">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center mb-8 text-gray-800">
-          CÁC GÓI HỖ TRỢ TÀI CHÍNH NGÂN HÀNG PVcomBank
+          CÁC GÓI HỖ TRỢ TÀI CHÍNH NGÂN HÀNG PVCOMBANK
         </h2>
 
         <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto text-sm sm:text-base">

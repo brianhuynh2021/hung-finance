@@ -32,54 +32,57 @@ const Footer = () => {
             </div>
 
             {/* Bên phải: social */}
-            <div className="flex flex-col items-start md:items-end gap-3">
-              <p className="text-sm font-semibold text-gray-700">
-                Kết nối với tôi
-              </p>
-              <div className="flex items-center gap-3">
-                {/* Zalo */}
-                <a
-                  href="https://zalo.me/0973341232"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-9 h-9 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition"
-                  title="Chat Zalo"
-                >
-                  <SiZalo size={18} />
-                </a>
+            <div className="flex flex-col items-center md:items-end gap-3">
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-sm font-semibold text-gray-700 text-center">
+                  Kết nối với tôi
+                </p>
 
-                {/* Facebook */}
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-9 h-9 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition"
-                  title="Facebook"
-                >
-                  <FaFacebookF size={16} />
-                </a>
+                <div className="flex items-center gap-3">
+                  {/* Zalo */}
+                  <a
+                    href="https://zalo.me/0973341232"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-9 h-9 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition"
+                    title="Chat Zalo"
+                  >
+                    <SiZalo size={18} />
+                  </a>
 
-                {/* Youtube */}
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-9 h-9 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition"
-                  title="YouTube"
-                >
-                  <FaYoutube size={18} />
-                </a>
+                  {/* Facebook */}
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-9 h-9 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                    title="Facebook"
+                  >
+                    <FaFacebookF size={16} />
+                  </a>
 
-                {/* Tiktok */}
-                <a
-                  href="https://tiktok.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-9 h-9 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition"
-                  title="TikTok"
-                >
-                  <FaTiktok size={16} />
-                </a>
+                  {/* Youtube */}
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-9 h-9 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition"
+                    title="YouTube"
+                  >
+                    <FaYoutube size={18} />
+                  </a>
+
+                  {/* Tiktok */}
+                  <a
+                    href="https://tiktok.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-9 h-9 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition"
+                    title="TikTok"
+                  >
+                    <FaTiktok size={16} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

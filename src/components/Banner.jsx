@@ -12,21 +12,27 @@ const Banner = () => {
         {/* Text */}
         <div>
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
-            MR. HƯNG CHUYÊN VIÊN NGÂN HÀNG PVcomBank
+            MR. HƯNG CHUYÊN VIÊN NGÂN HÀNG PVCOMBANK
             <span className="block text-orange-500">
               HỖ TRỢ TÀI CHÍNH MUA NHÀ, ĐẤT, Ô TÔ, KINH DOANH
             </span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
-            Lãi suất thấp chỉ từ <span className="font-semibold">7.2% - 8.2%/năm</span>
+            Lãi suất thấp chỉ từ <span
+  className="font-bold text-orange-600 animate-pulse transition-all duration-300"
+>
+  3.99% - 6%/năm
+</span>
           </p>
 
           <ul className="text-sm sm:text-base text-gray-700 space-y-1 mb-6">
             <li>• Thủ tục đơn giản, giải ngân nhanh.</li>
             <li>• Hỗ trợ hồ sơ khó, nợ xấu vẫn có giải pháp.</li>
             <li>• Hỗ trợ vay toàn quốc, ưu tiên Hồ Chí Minh và khu vực lân cận.</li>
-            <li>• Hạn mức vay lên đến 80% giá trị tài sản đảm bảo.</li>
-            <li>• Thời hạn vay tối đa 30 năm, trả góp linh hoạt hàng tháng.</li>
+            <li>• Ân hạn gốc 36 tháng không trả gốc.</li>
+            <li>• Hạn mức vay lên tới 85% giá trị tài sản bảo đảm.</li>
+            <li>• Độ tuổi vay lên tới 80 tuổi.</li>
+            <li>• Nhận diện tích nhỏ dưới 15m2. Hẻm nhỏ dưới 1m.</li>
           </ul>
 
           <div className="flex flex-wrap gap-3 items-center">

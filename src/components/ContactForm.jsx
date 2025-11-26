@@ -110,7 +110,7 @@ const ContactForm = () => {
 
             {submitted && (
               <p className="text-xs text-green-600 mt-2">
-                Đã gửi thông tin (demo). Mr. Hưng Phạm sẽ liên hệ với bạn sớm nhất có thể.
+                Đã gửi thông tin. Mr. Hưng Phạm sẽ liên hệ với bạn sớm nhất có thể.
               </p>
             )}
           </form>

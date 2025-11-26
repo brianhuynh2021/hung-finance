@@ -28,7 +28,7 @@ const Header = () => {
           />
           <div className="flex flex-col leading-tight">
             <span className="font-semibold text-sm sm:text-base">
-              Mr. Hưng Phạm - Chuyên viên ngân hàng PVcomBank
+              Mr. Hưng Phạm - Chuyên viên ngân hàng PVCOMBANK
             </span>
             <span className="text-xs text-gray-500">
               Hỗ trợ vay vốn mua nhà, đất, ô tô, kinh doanh
