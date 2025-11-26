@@ -6,18 +6,53 @@ const ContactForm = () => {
   const [email, setEmail] = useState('')
   const [note, setNote] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [errorMsg, setErrorMsg] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setSubmitted(false)
+    setErrorMsg('')
+    setLoading(true)
 
-    // TODO: nối API backend sau
-    console.log({ name, phone, email, note })
-    setSubmitted(true)
-    setName('')
-    setPhone('')
-    setEmail('')
-    setNote('')
+    try {
+      const data = {
+        access_key: 'b2297767-3f20-4773-a6ad-1ad543f725ea',
+        to_email: 'hungcredit@gmail.com',
+        subject: 'Khách hàng mới đăng ký tư vấn vay vốn',
+        name,
+        phone,
+        email,
+        note,
+      }
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setLoading(false)
+        setSubmitted(true)
+        setName('')
+        setPhone('')
+        setEmail('')
+        setNote('')
+      } else {
+        console.error('Web3Forms error:', result)
+        setLoading(false)
+        setErrorMsg('Gửi thông tin thất bại, vui lòng thử lại sau!')
+      }
+    } catch (error) {
+      console.error('Submit error:', error)
+      setLoading(false)
+      setErrorMsg('Có lỗi kết nối, vui lòng thử lại sau!')
+    }
   }
 
   return (
@@ -101,11 +136,18 @@ const ContactForm = () => {
               />
             </div>
 
+            {errorMsg && (
+              <p className="text-xs text-red-600 mt-1">{errorMsg}</p>
+            )}
+
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-lg text-sm sm:text-base transition-colors"
+              disabled={loading}
+              className={`w-full text-white font-semibold py-2.5 rounded-lg text-sm sm:text-base transition-colors ${
+                loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-orange-500 hover:bg-orange-600'
+              }`}
             >
-              GỬI THÔNG TIN
+              {loading ? 'Đang gửi...' : 'GỬI THÔNG TIN'}
             </button>
 
             {submitted && (
