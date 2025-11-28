@@ -47,7 +47,7 @@ const NewsSection = () => {
                 <p className="text-sm text-gray-700 mb-3">{post.short}</p>
 
                 <button
-                  onClick={() => alert("Trang chi tiết sẽ làm sau")}
+                  onClick={() => alert("Chức năng đang phát triển")}
                   className="px-4 py-2 text-sm rounded-full border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium"
                 >
                   Xem chi tiết
