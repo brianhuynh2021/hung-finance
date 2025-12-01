@@ -27,5 +27,13 @@
         });
       }
     </script>
+
+    <!-- Auto redirect recovery token -->
+    <script>
+      const hash = window.location.hash;
+      if (hash.startsWith("#recovery_token=")) {
+        window.location.replace("/admin/" + hash);
+      }
+    </script>
   </body>
 </html>
