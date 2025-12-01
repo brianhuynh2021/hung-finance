@@ -1,0 +1,42 @@
+# backend:
+#   name: github
+#   repo: brianhuynh2021/hung-finance
+#   branch: main
+
+# media_folder: "public/uploads"
+# public_folder: "/uploads"
+
+# collections:
+#   - name: "posts"
+#     label: "Bài viết"
+#     folder: "src/posts"
+#     create: true
+#     slug: "{{slug}}"
+#     fields:
+#       - { label: "Tiêu đề", name: "title", widget: "string" }
+#       - { label: "Ngày đăng", name: "date", widget: "datetime" }
+#       - { label: "Ảnh đại diện", name: "thumbnail", widget: "image" }
+#       - { label: "Link YouTube (nếu có)", name: "youtube", widget: "string", required: false }
+#       - { label: "Nội dung", name: "body", widget: "markdown" }
+
+# local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Bài viết"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tiêu đề", name: "title", widget: "string" }
+      - { label: "Ngày đăng", name: "date", widget: "datetime" }
+      - { label: "Ảnh đại diện", name: "thumbnail", widget: "image" }
+      - { label: "Link YouTube (nếu có)", name: "youtube", widget: "string", required: false }
+      - { label: "Nội dung", name: "body", widget: "markdown" }

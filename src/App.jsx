@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -10,7 +10,8 @@ import ServicesSection from './components/ServicesSection'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import FloatingChatButtons from './components/FloatingChatButtons'
-import NewsSection from "./components/NewsSection";
+import NewsSection from "./components/NewsSection"
+import PostDetail from './posts/PostDetail'
 
 // Trang chủ
 function HomePage() {
@@ -50,6 +51,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/tin-tuc" element={<NewsPage />} />
+          <Route path="/posts/:slug" element={<PostDetail />} />
         </Routes>
       </main>
 

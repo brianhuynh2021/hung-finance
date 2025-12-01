@@ -1,28 +1,23 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+import { loadPosts } from "../utils/loadPosts";
 
-const NewsSection = () => {
+export default function NewsSection() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("/posts/posts.json")
-      .then((res) => res.json())
-      .then(async (files) => {
-        const loaded = [];
-
-        for (const file of files) {
-          const p = await fetch(`/posts/${file}`).then((r) => r.json());
-          loaded.push(p);
-        }
-
-        setPosts(loaded);
-      });
+    AOS.init();
+    const loaded = loadPosts();
+    setPosts(loaded.slice(0, 6));
   }, []);
 
   return (
     <section id="tin-tuc" className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-          Tin tức &amp; chia sẻ
+          Tin tức & chia sẻ
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -31,27 +26,29 @@ const NewsSection = () => {
               key={post.slug}
               className="bg-[#FFF6EC] rounded-xl shadow hover:shadow-lg transition overflow-hidden"
             >
-              <img
-                src={post.thumbnail}
-                alt={post.title}
-                className="w-full h-40 object-cover"
-              />
+              {post.thumbnail && (
+                <img
+                  src={post.thumbnail}
+                  alt={post.title}
+                  className="w-full h-40 object-cover"
+                />
+              )}
 
               <div className="p-4">
-                <p className="text-xs text-gray-500">{post.date}</p>
+                <p className="text-xs text-gray-500">
+                  {new Date(post.date).toLocaleDateString("vi-VN")}
+                </p>
 
-                <h3 className="font-semibold text-lg text-gray-900 mt-1 mb-2">
+                <h3 className="font-semibold text-lg mt-1 mb-2 line-clamp-2">
                   {post.title}
                 </h3>
 
-                <p className="text-sm text-gray-700 mb-3">{post.short}</p>
-
-                <button
-                  onClick={() => alert("Chức năng đang phát triển")}
-                  className="px-4 py-2 text-sm rounded-full border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium"
+                <Link
+                  to={`/posts/${post.slug}`}
+                  className="inline-block px-4 py-2 text-sm rounded-full border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium"
                 >
                   Xem chi tiết
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -59,6 +56,4 @@ const NewsSection = () => {
       </div>
     </section>
   );
-};
-
-export default NewsSection;
+}
