@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="vi">
   <head>
-    <meta charset="UTF-8" />
-    <title>Admin</title>
+    <meta charset="utf-8" />
+    <title>Hung Finance CMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div id="nc-root"></div>
+    <!-- Decap mount -->
+    <div id="decap-cms"></div>
 
+    <!-- BẮT BUỘC: Netlify Identity widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <!-- Redirect sau khi login -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
