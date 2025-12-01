@@ -24,6 +24,8 @@
 backend:
   name: git-gateway
   branch: main
+  auth_type: implicit
+  role: admin
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
