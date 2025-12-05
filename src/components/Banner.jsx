@@ -18,12 +18,21 @@ const Banner = () => {
             </span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4">
-            Lãi suất thấp chỉ từ <span
-  className="font-bold text-orange-600 animate-pulse transition-all duration-300"
->
-  3.99% - 6%/năm
-</span>
+            Lãi suất ưu đãi từ
+            <span className="ml-1 font-bold text-orange-600 animate-pulse transition-all duration-300">
+              3.99% - 6%/năm
+            </span>
           </p>
+
+          {/* Thêm nội dung ngay bên dưới đoạn text lãi suất */}
+          <p className="text-center text-gray-700 text-sm sm:text-base mb-2">
+            Hồ sơ duyệt nhanh trong 2 ngày
+          </p>
+          <div className="notice-container mb-6 flex justify-center">
+            <p className="notice-text text-orange-600 font-semibold text-sm sm:text-base text-center px-3">
+              Tùy theo nhu cầu: mua đất • mua nhà • mua ô tô • vay kinh doanh • tư vấn miễn phí
+            </p>
+          </div>
 
           <ul className="text-sm sm:text-base text-gray-700 space-y-1 mb-6">
             <li>• Thủ tục đơn giản, giải ngân nhanh.</li>

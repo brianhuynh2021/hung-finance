@@ -7,12 +7,8 @@ import houseImg from '../assets/services/house.png'
 import businessImg from '../assets/services/business.png'
 import carImg from '../assets/services/car.png'
 
-const imageMap = {
-  land: landImg,
-  house: houseImg,
-  business: businessImg,
-  car: carImg,
-}
+// Tập ảnh để random đẹp mắt
+const imagePool = [landImg, houseImg, businessImg, carImg]
 
 const ServicesSection = () => {
   return (
@@ -22,9 +18,16 @@ const ServicesSection = () => {
           CÁC GÓI HỖ TRỢ TÀI CHÍNH NGÂN HÀNG PVCOMBANK
         </h2>
 
-        <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto text-sm sm:text-base">
-          Tùy theo nhu cầu: mua đất, mua nhà, mua ô tô, vay kinh doanh…
-        </p>
+        <div className="space-y-2 mb-8">
+          <p className="text-center text-gray-700 max-w-3xl mx-auto text-sm sm:text-base">
+            Tùy theo nhu cầu: mua đất, mua nhà, mua ô tô, vay kinh doanh…
+          </p>
+          <div className="notice-container max-w-4xl mx-auto flex justify-center">
+            <p className="notice-text text-orange-600 font-semibold text-sm sm:text-base text-center px-3">
+              Hồ sơ duyệt nhanh trong 2 ngày
+            </p>
+          </div>
+        </div>
 
         <div className="grid gap-7 sm:gap-10 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
           {services.map((service) => (
@@ -35,7 +38,7 @@ const ServicesSection = () => {
               {/* Ảnh */}
               <div className="overflow-hidden rounded-t-xl">
                 <img
-                  src={imageMap[service.key]}
+                  src={imagePool[Math.floor(Math.random() * imagePool.length)]}
                   alt={service.title}
                   className="w-full h-36 sm:h-44 object-cover transform hover:scale-[1.05] transition-transform duration-300"
                 />
@@ -43,25 +46,21 @@ const ServicesSection = () => {
 
               {/* Nội dung */}
               <div className="p-4 sm:p-5 flex-1 flex flex-col">
-                <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-2 leading-snug">
+                <h3 className="font-semibold text-orange-600 text-sm sm:text-base mb-2 leading-snug text-center">
                   {service.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-gray-600 mb-3">
-                  {service.desc}
-                </p>
+                {/* Bỏ phần mô tả desc theo yêu cầu */}
 
                 <ul className="space-y-1.5 text-xs sm:text-sm text-gray-700 mb-4">
                   {service.bullets.map((txt, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <span className="mt-[3px] text-orange-500 text-sm">✔</span>
-                      <span
-                        className={
-                          idx === service.highlightIndex
-                            ? 'font-semibold text-orange-600'
-                            : ''
-                        }
-                      >
+                      <span className={
+                        txt.toLowerCase().includes('lãi suất')
+                          ? 'font-bold text-orange-600 animate-pulse transition-all duration-300'
+                          : ''
+                      }>
                         {txt}
                       </span>
                     </li>

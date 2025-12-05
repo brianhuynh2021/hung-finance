@@ -1,0 +1,15 @@
+/* Gentle pulse animation for relaxed emphasis */
+@keyframes gentlePulse {
+	0% { opacity: 0.75; transform: translateY(0); }
+	50% { opacity: 1; transform: translateY(-1px); }
+	100% { opacity: 0.75; transform: translateY(0); }
+}
+
+.notice-container {
+	position: relative;
+}
+
+.notice-text {
+	display: inline-block;
+	animation: gentlePulse 2.8s ease-in-out infinite;
+}
